@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Artem Taran](https://up.htmlacademy.ru/htmlcss/22/user/814485).
-* Наставник: [Dmitry Shamrilo](https://github.com/shamrilods).
+* Наставник: [Dmitry Shamrilo](https://htmlacademy.ru/profile/shamrilods).
 
 ---
 
