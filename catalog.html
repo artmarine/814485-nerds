@@ -8,9 +8,7 @@
   <header class="header-catalog">
     <h1 class="catalog-header">Магазин готовых шаблонов</h1>
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="160" height="65" alt="Nёrds">
-      </a>
+      <a class="main-header-logo" href="#"><img src="img/logo.svg" width="160" height="65" alt="Nёrds"></a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -24,10 +22,80 @@
   </header>
 
   <main class="catalog-container">
-    <!--Здесь будут фильтры-->
+    <section class="filters">
+      <h3 class="vissualy-hiden">Фильтры</h3>
+      <form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <ul class="value">
+            <li>
+              <label>
+                стоимость:
+                <input type="range" name="radio">
+                <span>от</span> 0 <span>до</span> 15000
+              </label>
+            </li>
+          </ul>
+          <legend>сетка</legend>
+          <ul class="grid">
+            <li>
+              <label>
+                Адаптивная
+                <input type="radio" name="grid-view" value="adaptive" checked>
+              </label>
+            </li>
+            <li>
+              <label>
+                Фиксированная
+                <input type="radio" name="grid-view" value="fixed">
+              </label>
+            </li>
+            <li>
+              <label>
+                Резиновая
+                <input type="radio" name="grid-view" value="rubber">
+              </label>
+            </li>
+          </ul>
+          <legend>особенности</legend>
+          <ul class="cpeciality">
+            <li>
+              <label>
+                Слайдер
+                <input type="checkbox" name="Слайдер" checked>
+              </label>
+            </li>
+            <li>
+              <label>
+                Блок преимуществ
+                <input type="checkbox" name="Блок преимуществ">
+              </label>
+            </li>
+            <li>
+              <label>
+                Новости
+                <input type="checkbox" name="Новости" checked>
+              </label>
+            </li>
+            <li>
+              <label>
+                Галерея
+                <input type="checkbox" name="Галерея">
+              </label>
+            </li>
+            <li>
+              <label>
+                Корзина
+                <input type="checkbox" name="Корзина">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
     <section class="catalog">
       <h2 class="visialy-hiden">Шаблоны</h2>
-      <div class="filters">
+      <div class="filter">
         <b class="head-of-sorting">СОРТИРОВАТЬ:</b>
         <ul class="sorting">
           <li class="by-price"><a href="#">ПО ЦЕНЕ</a></li>
@@ -43,7 +111,9 @@
           <img class="catalog-img" src="img/sedona.jpg" width="360" height="576" alt="sedona">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">SEDONA</h3></a>
-            <p class="catalog-list-desctiption">Информационный сайт для туристов</p>
+            <p class="catalog-list-desctiption">
+
+            </p>
             <a class="catalog-item-price" href="#">9 900 РУБ.</a>
           </div>
         </li>
@@ -123,5 +193,6 @@
       </ul>
     </div>
   </footer>
+
 </body>
 </html>
