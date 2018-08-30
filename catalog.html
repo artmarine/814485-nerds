@@ -6,7 +6,6 @@
 </head>
 <body>
   <header class="header-catalog">
-    <h1 class="catalog-header">Магазин готовых шаблонов</h1>
     <nav class="main-navigation">
       <a class="main-header-logo" href="#"><img src="img/logo.svg" width="160" height="65" alt="Nёrds"></a>
       <ul class="site-navigation">
@@ -19,11 +18,12 @@
         <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
+    <h1 class="catalog-header">Магазин готовых шаблонов</h1>
   </header>
 
   <main class="catalog-container">
     <section class="filters">
-      <h3 class="vissualy-hiden">Фильтры</h3>
+      <h2 class="vissualy-hiden">Фильтры</h2>
       <form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
         <fieldset>
           <ul class="value">
@@ -31,11 +31,13 @@
               <label>
                 стоимость:
                 <input type="range" name="radio">
-                <span>от</span> 0 <span>до</span> 15000
+                <span>от</span>0<span>до</span>15000
               </label>
             </li>
           </ul>
-          <legend>сетка</legend>
+          </fieldset>
+          <fieldset>
+            <legend>сетка</legend>
           <ul class="grid">
             <li>
               <label>
@@ -56,6 +58,8 @@
               </label>
             </li>
           </ul>
+          </fieldset>
+          <fieldset>
           <legend>особенности</legend>
           <ul class="cpeciality">
             <li>
@@ -90,7 +94,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <a href="#">Показать</a>
       </form>
     </section>
     <section class="catalog">
@@ -111,9 +115,7 @@
           <img class="catalog-img" src="img/sedona.jpg" width="360" height="576" alt="sedona">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">SEDONA</h3></a>
-            <p class="catalog-list-desctiption">
-
-            </p>
+            <p class="catalog-list-desctiption">Информационный сайт для туристов</p>
             <a class="catalog-item-price" href="#">9 900 РУБ.</a>
           </div>
         </li>
@@ -137,7 +139,7 @@
         </li>
         <li class="catalog-list-item">
           <img class="catalog-header" src="img/browser.svg" alt="шапка картинки">
-          <img class="catalog-img" src="img/mishka.jpg" width="360" height="576"alt="mishka">
+          <img class="catalog-img" src="img/mishka.jpg" width="360" height="576" alt="mishka">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">MISHKA</h3></a>
             <p class="catalog-list-desctiption">Интернет-магазин вязаных игрушек</p>
