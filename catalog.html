@@ -26,78 +26,71 @@
 
   <main class="catalog-container">
     <section class="filters">
-      <h2 class="visualy-hidden">Фильтры</h2>
+      <h2 class="visually-hidden">Фильтры</h2>
       <form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <ul class="value">
-          <li>
-            <label>
-              стоимость:
-              <input type="range" name="radio">
-              <span>от</span>0<span>до</span>15000
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend class="grid">сетка</legend>
-        <ul class="grid-list">
-          <li>
-            <label>
-            Адаптивная
-              <input type="radio" name="grid-view" value="adaptive" checked>
-            </label>
-          </li>
-          <li>
-            <label>
-                Фиксированная
-              <input type="radio" name="grid-view" value="fixed">
-            </label>
-          </li>
-          <li>
-            <label>
-              Резиновая
-              <input type="radio" name="grid-view" value="rubber">
-            </label>
-          </li>
-        </ul>
+        <fieldset class="filter-item">
+          <legend>стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toglle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
         </fieldset>
-        <fieldset>
-          <legend class="characteristics">особенности</legend>
-            <ul class="cpeciality">
-              <li>
-                <label>
-                  Слайдер
-                <input type="checkbox" name="Слайдер" checked>
-                </label>
-              </li>
-              <li>
-                <label>
-                  Блок преимуществ
-                <input type="checkbox" name="Блок преимуществ">
-                </label>
-              </li>
-              <li>
-                 <label>
-                  Новости
-                  <input type="checkbox" name="Новости" checked>
-                </label>
-              </li>
-              <li>
-            <label>
-              Галерея
-              <input type="checkbox" name="Галерея">
-            </label>
-          </li>
-          <li>
-            <label>
-              Корзина
-              <input type="checkbox" name="Корзина">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-        <a href="#">Показать</a>
+        <fieldset class="filter-item-grid">
+          <legend>сетка:</legend>
+          <label>
+            <input type="radio" name="grid-view" value="adaptive" checked>
+            <span></span>
+            Адаптивная
+          </label>
+          <label>
+            <input type="radio" name="grid-view" value="fixed">
+            <span></span>
+            Фиксированная
+          </label>
+          <label>
+            <input type="radio" name="grid-view" value="rubber">
+            <span></span>
+            Резиновая
+          </label>
+        </fieldset>
+        <fieldset class="filter-item-features">
+          <legend>особенности:</legend>
+          <label>
+            <input type="checkbox" name="Слайдер" checked>
+            <span></span>
+            Слайдер
+          </label>
+          <label>
+            <input type="checkbox" name="Блок преимуществ">
+            <span></span>
+            Блок преимуществ
+          </label>
+          <label>
+            <input type="checkbox" name="Новости" checked>
+            <span></span>
+            Новости
+          </label>
+          <label>
+            <input type="checkbox" name="Галерея">
+            <span></span>
+            Галерея
+          </label>
+          <label>
+            <input type="checkbox" name="Корзина">
+            <span></span>
+            Корзина
+          </label>
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog">
