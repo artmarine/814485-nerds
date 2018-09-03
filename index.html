@@ -153,16 +153,28 @@
     </div>
   </footer>
     <section class="write-to-us">
-      <h3 class="visually-hidden">Напишите нам</h3>
-      <a class="button-close"<img src="img/close-cross.svg" width="21" height="21"></a>
+      <h3>Напишите нам</h3>
       <form action="https://echo.htmlacademy.ru" method="POST">
-        <label for="your-name">Ваше имя</label>
-          <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="your-email">Ваш e-mail</label>
-          <input id="your-email" type="text" name="e-mail" placeholder="email@example.com">
-        <label for="your-letter">Текст письма</label>
-          <textarea id="your-letter" name="content" placeholder="В свободной форме"></textarea>
-        <input type="submit" value="отправить">
+        <button class="button-close"><img src="img/close-cross.svg" width="21" height="21"></button>
+        <div class="login-column">
+          <label>
+            Ваше имя
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </div>
+        <div class="email-column">
+          <label>
+            Ваш e-mail
+            <input type="text" name="e-mail" placeholder="email@example.com">
+          </label>
+        </div>
+        <div class="content-column">
+          <label>
+            Текст письма
+            <textarea  name="content" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="write-to-us-button">Отправить</button>
       </form>
     </section>
 </body>

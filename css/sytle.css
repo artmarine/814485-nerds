@@ -412,14 +412,32 @@ a {
   color: #666666;
 }
 
-
-
 .contacts {
   margin-left: 140px;
   margin-top: 54px;
   margin-right: 981px;
   margin-bottom: 54px;
 }
+
+/*кнопка напишите нам*/
+
+.map .contacts-button {
+  display: block;
+  width: 219px;
+  padding: 18px 0px;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+/*_________________________________*/
 
 .features-discount {
   font-size: 36px;
@@ -629,7 +647,9 @@ p a {
   padding: 18px 0px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
+  font-weight: 500;
   background-color: #eeeeee;
   border-radius: 3px;
   border: none;
