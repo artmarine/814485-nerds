@@ -27,7 +27,7 @@
   <main class="catalog-container">
     <section class="filters">
       <h2 class="visually-hidden">Фильтры</h2>
-      <form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
+      <form class="form-filters" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
           <legend>стоимость:</legend>
           <div class="range-filter">
@@ -46,50 +46,46 @@
         </fieldset>
         <fieldset class="filter-item-grid">
           <legend>сетка:</legend>
-          <label>
-            <input type="radio" name="grid-view" value="adaptive" checked>
-            <span></span>
-            Адаптивная
-          </label>
-          <label>
-            <input type="radio" name="grid-view" value="fixed">
-            <span></span>
-            Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="grid-view" value="rubber">
-            <span></span>
-            Резиновая
-          </label>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hiden filter-input filter-input-radio" type="radio" name="grid-view" value="adaptive" id="adapt" checked>
+                <label for="adapt">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hiden filter-input filter-input-radio" type="radio" name="grid-view" value="adaptive" id="fix">
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hiden filter-input filter-input-radio" type="radio" name="grid-view" value="adaptive" id="rub" >
+                <label for="rub">Резиновая</label>
+              </li>
+            </ul>
         </fieldset>
         <fieldset class="filter-item-features">
-          <legend>особенности:</legend>
-          <label>
-            <input type="checkbox" name="Слайдер" checked>
-            <span></span>
-            Слайдер
-          </label>
-          <label>
-            <input type="checkbox" name="Блок преимуществ">
-            <span></span>
-            Блок преимуществ
-          </label>
-          <label>
-            <input type="checkbox" name="Новости" checked>
-            <span></span>
-            Новости
-          </label>
-          <label>
-            <input type="checkbox" name="Галерея">
-            <span></span>
-            Галерея
-          </label>
-          <label>
-            <input type="checkbox" name="Корзина">
-            <span></span>
-            Корзина
-          </label>
-        </fieldset>
+            <legend>особенности:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="filter-slider" checked>
+                <label for="filter-baxter-of-california">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ" id="filter-advantage">
+                <label for="filter-advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея" id="filter-galery">
+                <label for="filter-galery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина" id="filter-bag">
+                <label for="filter-bag">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
         <button type="submit" class="show-button">Показать</button>
       </form>
     </section>

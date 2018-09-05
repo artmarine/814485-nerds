@@ -16,16 +16,16 @@ a {
 }
 
 
-.visually-hidden {
+/* .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
+	/* clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
 	height: 1px !important;
 	width: 1px !important;
 	overflow: hidden;
-}
+} */ */
 
 /*navigation*/
 
@@ -471,6 +471,10 @@ a {
 }
 /*writo-to-us*/
 
+.write-to-us {
+  color: #000000;
+}
+
 .write-to-us input {
   border: 2px solid #d7dcde;
   border-radius: 2px;
@@ -537,10 +541,14 @@ a {
 /*filters*/
 /*стоимость*/
 
-.filter-item-grid,
-.filter-item-features {
-  border: none;
+.filters legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
 }
+
 
 .filter-item {
   margin: 0;
@@ -551,14 +559,6 @@ a {
 .range-filter {
   width: 260px;
   margin-top: 49px;
-}
-
-.filters legend {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #000000;
 }
 
 .range-controls {
@@ -636,36 +636,30 @@ a {
   text-align: right;
 }
 
-/*сетка*/
-
-
-
-
-.filter-item-grid input {
-  display: none;
+/*фильтры сетка и особенности*/
+.filter-item-grid,
+.filter-item-features {
+  border: none;
 }
 
-.filter-item-grid span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-
-}
-
-.filter-item-grid input:checked ~ span {
-  background: green;
-}
-
-.filter-item-grid label {
-  display: flex;
-  font-size: 16px;
+.filter-item-grid ul,
+.filter-item-features ul {
+  list-style: none;
   line-height: 20px;
 }
 
+.filter-option input:hover + label,
+.filter-option input:focus + label {
+  color: #000000;
+}
 
-/*особенности*/
+.filter-option input:disabled + label {
+  opacity: 0.3;
+}
 
-.filter-item-features input {
+
+
+/* .filter-item-features input {
   display: none;
 }
 
@@ -684,9 +678,9 @@ a {
   display: flex;
   font-size: 16px;
   line-height: 20px;
-}
+} */
 
-/*кнопка показать*/
+
 
 .show-button {
   display: block;
@@ -712,7 +706,7 @@ a {
   background-color: #d5d5d5;
 }
 
-.value {
+/* .value {
   list-style: none;
 }
 
@@ -747,7 +741,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   color: #283136;
-}
+} */
 
 .catalog {
   list-style: none;
@@ -832,6 +826,8 @@ a {
   color: #666666;
 }
 
+/*pagination*/
+
 .pagination-list {
   list-style: none;
 }
@@ -844,8 +840,9 @@ a {
 }
 
 .pagination-item-current a:hover {
-  background-color: #dfdfdf;
+  background-color: #ffffff;
 }
+
 
 .pagination-item-current a:active {
   background-color: #d5d5d5;
