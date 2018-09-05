@@ -553,13 +553,12 @@ a {
   margin-top: 49px;
 }
 
-.filter-item,
-.filter-item-grid legend,
-.filter-item-features legend {
+.filters legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #000000;
 }
 
 .range-controls {
@@ -639,6 +638,9 @@ a {
 
 /*сетка*/
 
+
+
+
 .filter-item-grid input {
   display: none;
 }
@@ -651,7 +653,7 @@ a {
 }
 
 .filter-item-grid input:checked ~ span {
-
+  background: green;
 }
 
 .filter-item-grid label {
