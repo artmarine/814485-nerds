@@ -26,8 +26,8 @@ a {
 	width: 1px !important;
 	overflow: hidden;
 }
-/*navigation*/
 
+/*navigation*/
 
 
 .main-header-logo:hover {
@@ -39,11 +39,8 @@ a {
 }
 
 .main-navigation {
-  font-size: 16px;
   line-height: 30px;
   color: #000000;
-
-  background-color: #eeeeee;
 }
 
 .site-navigation,
@@ -67,6 +64,7 @@ a {
 }
 
 /*slider*/
+
 .slider-container {
   width: 1200px;
   margin: 0 auto;
@@ -193,10 +191,10 @@ a {
   margin-bottom: 38px;
 }
 
-.button {
+.slider-item-button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 18px 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -233,22 +231,17 @@ a {
   list-style: none;
 }
 
+
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
 }
 
-.services-list p {
-  font-size: 16px;
-  line-height: 24px
-}
-
 .button-red {
   display: block;
   width: 81px;
   padding: 19px 39px;
-
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -328,15 +321,7 @@ a {
   margin-bottom: 35px;
 }
 
-.about p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
-
 .whatwedo {
-  font-size: 16px;
-  line-height: 24px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -345,16 +330,12 @@ a {
   list-style: none;
 }
 
-.whatwedo-item {
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-}
+
 
 /*statistics*/
+
 .statistics b {
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -365,19 +346,21 @@ a {
 
 .statistics-number {
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 45px;
   font-weight: 700;
   color: #000000;
 }
 
 .statistics-percent {
+  vertical-align: super;
+  font-size: 45px;
+  line-height: 10,06;
+  font-weight: 700;
   color: #000000;
 }
 
-.statistics-text {
-  font-size: 16px;
+.statistics-content {
   line-height: 18px;
-  color: #283136;
 }
 
 /*partners*/
@@ -386,23 +369,40 @@ a {
   list-style: none;
 }
 
+.partners-item a {
+  opacity: 0.2;
+}
+
+.partners-item a:hover {
+  opacity: 1;
+}
+
+.partners-item a:active {
+  opacity: 0.1;
+}
+
 /*footer*/
 /*map*/
 
 .map {
-
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
 
-.contacts {
-  background-color: #ffffff;
-}
 
 .contacts-title {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.contacts-number {
+  color: #666666;
+}
+
+.contacts-number a {
+  color: #666666;
 }
 
 
@@ -417,9 +417,8 @@ a {
   margin-top: 54px;
   margin-right: 981px;
   margin-bottom: 54px;
+  background-color: #ffffff;
 }
-
-/*кнопка напишите нам*/
 
 .map .contacts-button {
   display: block;
@@ -437,40 +436,55 @@ a {
   border-radius: 3px;
   border: none;
 }
-/*_________________________________*/
+/*footer-discount*/
 
 .features-discount {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
   color: #000000;
 }
 
 .discount {
-  font-size: 16px;
   line-height: 22px;
-  color: #444444;
 }
 
-.footer-social {
+/*footer-social*/
+
+.footer-social,
+.social-list {
   list-style: none;
 }
 
-p a {
-  color: #444444;
-}
-
-.social-list {
-  list-style: none
-}
 
 .social-button {
   background-color: #e1e1e1;
 }
 
-.write-to-us p {
+.social-button:hover {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  color: #e37376;
+  background-color:#d7373b;
+}
+/*writo-to-us*/
+
+.write-to-us input {
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-to-us textarea {
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-to-us h3 {
   font-size: 45px;
-  font-weight: 500;
   line-height: 45px;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -481,17 +495,43 @@ p a {
   color: #000000;
 }
 
+
+
+.write-to-us-button {
+  display: block;
+  width: 260px;
+  padding: 18px 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
 /*catalog*/
 /*header*/
+
+.catalog-caption {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
 
 .header-catalog {
   background-color: #eeeeee;
 }
 
-.catalog-header {
-  font-size: 55px;
-  line-height: 55px;
-  color: #000000;
+.catalog-top {
+  opacity: 0.1;
+}
+
+.catalog-top:hover {
+  opacity: 1;
 }
 
 /*filters*/
@@ -602,11 +642,11 @@ p a {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: red;
+
 }
 
 .filter-item-grid input:checked ~ span {
-  background: green;
+
 }
 
 .filter-item-grid label {
@@ -641,7 +681,7 @@ p a {
 
 /*кнопка показать*/
 
-.form-filters button {
+.show-button {
   display: block;
   width: 260px;
   padding: 18px 0px;
@@ -655,7 +695,15 @@ p a {
   border: none;
 }
 
-/*-------------------------*/
+.show-button:hover {
+  background-color: #dfdfdf;
+  }
+
+
+.show-button:active {
+  color: #959595;
+  background-color: #d5d5d5;
+}
 
 .value {
   list-style: none;
@@ -698,6 +746,34 @@ p a {
   list-style: none;
 }
 
+
+.catalog-info {
+  background-color: #eeeeee;
+}
+
+
+.catalog-item-price {
+  display: block;
+  width: 200px;
+  padding: 18px 0px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.catalog-item-price:hover {
+  background-color: #e74246;
+}
+
+.catalog-item-price:active {
+  background-color: #d7373b;
+}
+
 .head-of-sorting {
   font-size: 18px;
   line-height: 18px;
@@ -706,27 +782,29 @@ p a {
   text-transform: uppercase;
 }
 
+/*catalog/filter/soarting*/
+
 .sorting {
   list-style: none;
 }
 
-.by-price a {
+.sorting a {
+  color: #000000;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
-}
-
-.by-type a,
-.by-name a {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
   opacity: 0.3;
 }
+
+.sorting a:hover {
+  opacity: 0.6;
+}
+
+.sorting a:active{
+  opacity: 1;
+}
+
 
 .catalog-list {
   list-style: none;
@@ -751,17 +829,70 @@ p a {
   list-style: none;
 }
 
-.pagination-item a {
-  font-size: 16px;
+.pagination-item-current a{
   line-height: 18px;
   font-weight: 500;
   color: #000000;
+  background-color: #ffffff;
 }
 
-.pagination-item-next a {
+.pagination-item-current a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item-current a:active {
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current:focus {
+  background-color: #ffffff;
+}
+
+.pagination-item a {
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  background-color: #d5d5d5;
+}
+
+.pagination-item a:focus {
+  background-color: #ffffff;
+}
+
+.pagination-button a {
+  display: block;
+  width: 260px;
+  padding: 16px 0;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  text-transform: uppercase;
   color: #000000;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+
+}
+
+.pagination-button a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-button a:active {
+  background-color: #d5d5d5;
+}
+
+.pagination-button a:focus {
+  background-color: #ffffff;
 }

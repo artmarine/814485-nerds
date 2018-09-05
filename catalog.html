@@ -21,7 +21,7 @@
         <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
-    <h1 class="catalog-header">Магазин готовых шаблонов</h1>
+    <h1 class="catalog-caption">Магазин готовых шаблонов</h1>
   </header>
 
   <main class="catalog-container">
@@ -48,17 +48,17 @@
           <legend>сетка:</legend>
           <label>
             <input type="radio" name="grid-view" value="adaptive" checked>
-            <span></span>
+            <span><img src="img/radio-on.svg" width="25" height="25"></span>
             Адаптивная
           </label>
           <label>
             <input type="radio" name="grid-view" value="fixed">
-            <span></span>
+            <span><img src="img/radio-off.svg" width="25" height="25"></span>
             Фиксированная
           </label>
           <label>
             <input type="radio" name="grid-view" value="rubber">
-            <span></span>
+            <span><img src="img/radio-off.svg" width="25" height="25"></span>
             Резиновая
           </label>
         </fieldset>
@@ -90,24 +90,24 @@
             Корзина
           </label>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="show-button">Показать</button>
       </form>
     </section>
     <section class="catalog">
-      <h2 class="visualy-hidden">Шаблоны</h2>
+      <h2 class="visually-hidden">Шаблоны</h2>
       <div class="filter">
         <b class="head-of-sorting">сортировать:</b>
         <ul class="sorting">
-          <li class="by-price"><a href="#">по цене</a></li>
-          <li class="by-type"><a href="#">по типу</a></li>
-          <li class="by-name"><a href="#">по названию</a></li>
-          <li class="first-triangle-img"><img src="#"></li>
-          <li class="second-triangle-img"><img src="#"></li>
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по названию</a></li>
+          <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
+          <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
         </ul>
       </div>
       <ul class="catalog-list">
         <li class="catalog-list-item">
-          <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="шапка картинки">
+          <img class="catalog-top" src="img/browser.svg" width="360" height="40" alt="шапка картинки">
           <img class="catalog-img" src="img/sedona.jpg" width="360" height="576" alt="sedona">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">sedona</h3></a>
@@ -116,7 +116,7 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <img class="catalog-header" src="img/browser.svg" width="360" height="40" alt="шапка картинки">
+          <img class="catalog-top" src="img/browser.svg" width="360" height="40" alt="шапка картинки">
           <img class="catalog-img" src="img/pink.jpg"  width="360" height="576" alt="pink">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">pink app</h3></a>
@@ -125,7 +125,7 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <img class="catalog-header" src="img/browser.svg" alt="шапка картинки">
+          <img class="catalog-top" src="img/browser.svg" alt="шапка картинки">
           <img class="catalog-img" src="img/barbershop.jpg" width="360" height="576" alt="barbershop">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">barbershop</h3></a>
@@ -134,7 +134,7 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <img class="catalog-header" src="img/browser.svg" alt="шапка картинки">
+          <img class="catalog-top" src="img/browser.svg" alt="шапка картинки">
           <img class="catalog-img" src="img/mishka.jpg" width="360" height="576" alt="mishka">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">mishka</h3></a>
@@ -143,7 +143,7 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <img class="catalog-header" src="img/browser.svg" alt="шапка картинки">
+          <img class="catalog-top" src="img/browser.svg" alt="шапка картинки">
           <img class="catalog-img" src="img/aplus.jpg" width="360" height="576" alt="aplus">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">a plus</h3></a>
@@ -152,7 +152,7 @@
           </div>
         </li>
         <li class="catalog-list-item">
-          <img class="catalog-header" src="img/browser.svg" alt="шапка картинки">
+          <img class="catalog-top" src="img/browser.svg" alt="шапка картинки">
           <img class="catalog-img" src="img/kvast.jpg"  width="360" height="576"alt="kvast">
           <div class="catalog-info">
             <a href="#"><h3 class="catalog-head">кваст</h3></a>
@@ -162,10 +162,10 @@
         </li>
       </ul>
       <ul class="pagination-list">
-        <li class="pagination-item"><a href="#">1</a></li>
-        <li class="pagination-item pagination-item-current"><a href="#">2</a></li>
+        <li class="pagination-item-current"><a href="#">1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item-next"><a href="#">следующая</a></li>
+        <li class="pagination-button"><a href="#">следующая</a></li>
       </ul>
     </section>
   </main>
@@ -175,7 +175,11 @@
       <div class="contacts">
         <b class="contacts-title">nёrds design studio</b>
         <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-number">тел. <a href="tel:+7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
+        <p class="contacts-number">тел.
+          <a href="tel:+7 (812) 275-75-75">
+            +7 (812) 275-75-75
+          </a>
+        </p>
         <a class="contacts-button" href="#">Напишите нам</a>
       </div>
     </div>
