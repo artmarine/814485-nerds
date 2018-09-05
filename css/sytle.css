@@ -537,6 +537,11 @@ a {
 /*filters*/
 /*стоимость*/
 
+.filter-item-grid,
+.filter-item-features {
+  border: none;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
