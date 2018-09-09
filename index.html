@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo"><img src="img/logo.svg" width="160" height="65" alt="Nёrds"></a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
@@ -23,7 +23,7 @@
     </nav>
 
     <section class="slider">
-      <div class="slider-container">
+      <div class="slider-container ">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="slider-controls">
           <i class="active"></i>
@@ -50,7 +50,7 @@
       </div>
     </section>
   </header>
-  <main class="main-container">
+  <main class="main-container container">
     <h1 class="visually-hidden">Дизайн студия - Nёrds</h1>
 
     <section class="services">
@@ -77,39 +77,41 @@
       </ul>
     </section>
 
-    <section class="about">
-      <h2 class="visually-hidden">О нас</h2>
-      <b class="aboutus">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-        превыше креатива. Работаем не покладая рук, как роботы.
-      </p>
-      <b class="whatwedo">Выполняем заказы на разработку:</b>
-      <ul class="whatwedo-list">
-        <li class="whatwedo-item">Веб-сайтов любой сложности</li>
-        <li class="whatwedo-item">Мобильных приложений для iOS и Android</li>
-        <li class="whatwedo-item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
-    </section>
+    <div class="about-container">
+      <section class="about">
+        <h2 class="visually-hidden">О нас</h2>
+        <b class="aboutus">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <b class="whatwedo">Выполняем заказы на разработку:</b>
+        <ul class="whatwedo-list">
+          <li class="whatwedo-item">Веб-сайтов любой сложности</li>
+          <li class="whatwedo-item">Мобильных приложений для iOS и Android</li>
+          <li class="whatwedo-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </section>
 
-    <section class="statistics">
-      <h2 class="visually-hidden">Статистика</h2>
-      <img class="statistics-logo" src="img/statistic-logo.jpg"  width="360" height="208" alt="Nёrds">
-      <b>с 2004 года любим точность во всем</b>
-      <ul class="statistics-list">
-        <li class="statistics-item">
-          <span class="statistics-number">146</span><span class="statistics-percent">%</span>
-          <span class="statistics-content">Уровень самоотдачи</span>
-        </li>
-        <li class="statistics-item">
-          <span class="statistics-number">150</span><span class="statistics-percent">%</span>
-          <span class="statistics-content">Соблюдение сроков</span>
-        </li>
-        <li class="statistics-item">
-          <span class="statistics-number">50</span><span class="statistics-percent">%</span>
-          <span class="statistics-content">Минимальная предоплалата</span>
-        </li>
-      </ul>
-    </section>
+      <section class="statistics">
+        <h2 class="visually-hidden">Статистика</h2>
+        <img class="statistics-logo" src="img/statistic-logo.jpg"  width="360" height="208" alt="Nёrds">
+        <b>с 2004 года любим точность во всем</b>
+        <ul class="statistics-list">
+          <li class="statistics-item">
+            <span class="statistics-number">146<sup>%</sup></span>
+            <span class="statistics-content">Уровень самоотдачи</span>
+          </li>
+          <li class="statistics-item">
+            <span class="statistics-number">150<sup>%</sup></span>
+            <span class="statistics-content">Соблюдение сроков</span>
+          </li>
+          <li class="statistics-item">
+            <span class="statistics-number">50<sup>%</sup></span>
+            <span class="statistics-content">Минимальная предоплалата</span>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="partners">
       <h2 class="visually-hidden">Партнёры</h2>
@@ -130,50 +132,46 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="container">
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <div class="contacts">
         <b class="contacts-title">nёrds design studio</b>
         <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-number">тел. <a href="tel:+7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
+        <p class="contacts-number"><a href="tel:+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a></p>
         <a class="contacts-button" href="#">Напишите нам</a>
       </div>
     </section>
-    <div class="footer-discount">
-      <b class="features-discount">Давайте дружить, это выгодно!</b>
-      <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-    <div class="footer-social">
-      <ul class="social-list">
-        <li><a class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
-        <li><a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-        <li><a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
-      </ul>
+    <div class="social-discount">
+      <div class="footer-discount">
+        <b class="features-discount">Давайте дружить, это выгодно!</b>
+        <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <div class="footer-social">
+        <ul class="social-list">
+          <li><a class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
+          <li><a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+          <li><a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
+        </ul>
+      </div>
     </div>
   </footer>
-    <section class="write-to-us">
+    <section class="modal modal-write">
       <h3>Напишите нам</h3>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <button class="button-close"><img src="img/close-cross.svg" width="21" height="21"></button>
-        <div class="login-column">
-          <label>
-            Ваше имя:
-            <input type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-        </div>
-        <div class="email-column">
-          <label>
-            Ваш e-mail:
-            <input type="text" name="e-mail" placeholder="email@example.com">
-          </label>
-        </div>
-        <div class="content-column">
-          <label>
-            Текст письма:
-            <textarea  name="content" placeholder="В свободной форме"></textarea>
-          </label>
-        </div>
+      <button class="button-close" type="button">Закрыть</button>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="login">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+        </p>
+        <p class="email">
+          <label for="post">Ваш e-mail:</label>
+          <input type="text" name="e-mail" placeholder="email@example.com" id="post">
+        </p>
+        <p class="text">
+          <label for="text">Текст письма:</label>
+          <textarea name="content" placeholder="В свободной форме" id="text"></textarea>
+        </p>
         <button type="submit" class="write-to-us-button">Отправить</button>
       </form>
     </section>
