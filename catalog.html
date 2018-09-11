@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Nёrds</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/sytle.css" rel="stylesheet">
 </head>
@@ -18,7 +18,7 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#">Корзина</a></li>
+        <li><a class="bag" href="#">Корзина</a></li>
       </ul>
     </nav>
     <h1 class="catalog-caption">Магазин готовых шаблонов</h1>
@@ -166,31 +166,31 @@
     </section>
   </main>
   <footer>
-    <div class="map">
-      <img src="img/map.jpg" width="1440" height="416" alt="карта">
-      <div class="contacts">
-        <b class="contacts-title">nёrds design studio</b>
-        <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-number">тел.
-          <a href="tel:+7 (812) 275-75-75">
-            +7 (812) 275-75-75
-          </a>
-        </p>
-        <a class="contacts-button" href="#">Напишите нам</a>
+      <section class="map container">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="container">
+          <div class="contacts">
+            <b class="contacts-title">nёrds design studio</b>
+            <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-number"><a href="tel:+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a></p>
+            <a class="contacts-button" href="#">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+      <div class="social-discount container">
+        <div class="footer-discount">
+          <b class="features-discount">Давайте дружить, это выгодно!</b>
+          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+        <div class="footer-social">
+          <ul class="social-list">
+            <li><a class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
+            <li><a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+            <li><a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="footer-discount">
-      <b class="features-discount">Давайте дружить, это выгодно!</b>
-      <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-    <div class="footer-social">
-      <ul class="social-list">
-        <li><a class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
-        <li><a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-        <li><a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
-      </ul>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 </html>

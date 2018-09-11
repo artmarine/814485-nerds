@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nёrds</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/sytle.css" rel="stylesheet">
 </head>
@@ -12,13 +12,13 @@
     <nav class="main-navigation container">
       <a class="main-header-logo"><img src="img/logo.svg" width="160" height="65" alt="Nёrds"></a>
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="client.html">Клиенты</a></li>
+        <li><a href="store.html">Магазин</a></li>
+        <li><a href="contact.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#">Корзина</a></li>
+        <li><a class="bag" href="#">Корзина</a></li>
       </ul>
     </nav>
 
@@ -32,7 +32,7 @@
         </div>
         <ul class="slider-list">
           <li class="slider-item">
-            <h3>Долго, дорого,<br> скурпулезно</h3>
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
             <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
@@ -132,17 +132,19 @@
     </section>
   </main>
 
-  <footer class="container">
-    <section class="map">
+  <footer>
+    <section class="map container">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="contacts">
-        <b class="contacts-title">nёrds design studio</b>
-        <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-number"><a href="tel:+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a></p>
-        <a class="contacts-button" href="#">Напишите нам</a>
+      <div class="container">
+        <div class="contacts">
+          <b class="contacts-title">nёrds design studio</b>
+          <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts-number"><a href="tel:+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a></p>
+          <a class="contacts-button" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
-    <div class="social-discount">
+    <div class="social-discount container">
       <div class="footer-discount">
         <b class="features-discount">Давайте дружить, это выгодно!</b>
         <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
@@ -156,23 +158,23 @@
       </div>
     </div>
   </footer>
-    <section class="modal modal-write">
+    <section class="feedback">
+      <button class="close-btn" type="button">Закрыть</button>
       <h3>Напишите нам</h3>
-      <button class="button-close" type="button">Закрыть</button>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="login">
-          <label for="user-name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="user-name">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="input">
+          <label for="username">Ваше имя:</label>
+          <input type="text" name="user-name" placeholder="Имя Фамилия" id="username">
         </p>
-        <p class="email">
-          <label for="post">Ваш e-mail:</label>
-          <input type="text" name="e-mail" placeholder="email@example.com" id="post">
+        <p class="input">
+          <label for="usermail">Ваш e-mail:</label>
+          <input type="text" name="e-mail" placeholder="email@example.com" id="usermail">
         </p>
-        <p class="text">
-          <label for="text">Текст письма:</label>
-          <textarea name="content" placeholder="В свободной форме" id="text"></textarea>
+        <p class="textarea">
+          <label for="usercomment">Текст письма:</label>
+          <textarea name="comment" rows="5" placeholder="В свободной форме" id="usercomment"></textarea>
         </p>
-        <button type="submit" class="write-to-us-button">Отправить</button>
+        <button type="submit" class="feedback-button">Отправить</button>
       </form>
     </section>
 </body>
