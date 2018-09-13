@@ -269,7 +269,7 @@ a {
 /*main---services*/
 
 .services {
-  margin-bottom: 77px;
+  margin-bottom: 42px;
   padding-bottom: 78px;
   background-color: #ffffff;
   border-bottom: 2px solid green;
@@ -379,10 +379,12 @@ a {
 .about-container{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 53px;
 }
 
 .about {
   width: 660px;
+  margin-top:33px;
 }
 
 .aboutus {
@@ -428,7 +430,7 @@ a {
 /*statistics*/
 
 .statistics-logo {
-  margin-bottom: 37px;
+  margin-bottom: 31px;
 }
 
 .statistics {
@@ -436,41 +438,59 @@ a {
 }
 
 .statistics b {
-  padding-bottom: 42px;
-  display: inline-block;
+  display: block;
+  padding-bottom: 37px;
+  margin-left: 17px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
 
 .statistics-list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
   width: 360px;
+}
+
+.statistics-item {
+  width: 120px;
   display: flex;
+  flex-direction: column;
 }
 
 .statistics-number {
+  /* display: block;
+  padding-top: 11px; */
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   color: #000000;
 }
 
+.statistics-number sup {
+  /* font-size: 20px;
+  line-height: 20; */
+  font-size: 50%;
+  line-height: 50%;
+  color: #000000;
+}
+
 .statistics-content {
+  margin-top: 19px;
   line-height: 18px;
 }
 
-.sup {
-  font-size: 20px;
-  line-height: 20;
-  color: #000000;
-}
+
 
 /*partners*/
 
 .partners {
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding-top: 49px;
+  padding-bottom: 36px;
   margin-bottom: 80px;
 }
 
@@ -478,7 +498,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .partners-list {
@@ -502,6 +522,10 @@ a {
   height: 52px;
   background: greenyellow;
   transform: translateY(-50%);
+}
+
+.partners-item:last-child::after {
+  display: none;
 }
 
 .partners-item a {
