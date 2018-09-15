@@ -956,11 +956,16 @@ input:invalid {
 /*header*/
 
 .header-catalog {
-  min-height: 356px;
+  padding-top: 47px;
+  margin-bottom: 58px;
+  background-color: #eeeeee;
+
 }
 .catalog-caption {
-  margin-left: 212px;
-  margin-top: 100px;
+  display: inline-block;
+  margin-left: 216px;
+  margin-top: 81px;
+  margin-bottom: 106px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -968,11 +973,12 @@ input:invalid {
 }
 
 .header-catalog {
-  background-color: #eeeeee;
+
 }
 
 .catalog-top {
   opacity: 0.1;
+  display: block;
 }
 
 .catalog-top:hover {
@@ -986,15 +992,15 @@ input:invalid {
   display: flex;
 }
 
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
 .filters {
   width: 260px;
   display: flex;
   margin-right: 140px;
-}
-
-.catalog {
-  display: flex;
-  flex-direction: column;
 }
 
 .filter {
@@ -1013,6 +1019,7 @@ input:invalid {
 
 .filter-item {
   margin: 0;
+  margin-bottom: 59px;
   padding: 0;
   border: none;
 }
@@ -1025,7 +1032,7 @@ input:invalid {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1047,7 +1054,7 @@ input:invalid {
 .range-controls .toggle {
   position: absolute;
   top: 31px;
-  left: 0;
+  left: 0px;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1059,11 +1066,11 @@ input:invalid {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1096,9 +1103,14 @@ input:invalid {
 
 /*фильтры сетка и особенности*/
 
-.filter-option {
-  margin-bottom: 20px;
+.filter-item-grid legend {
+  margin-bottom: 2px;
+}
 
+.filter-option {
+  margin-bottom: 5px;
+  padding-top: 16px;
+  padding-left: 33px;
   background: rgba(0, 128, 0, 0.2);
   box-shadow: 0 0 0 3px green;
 }
@@ -1111,7 +1123,7 @@ input:invalid {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -30px;
+  left: -34px;
   top: 0;
 
   width: 25px;
@@ -1123,7 +1135,7 @@ input:invalid {
 .filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
-  left: -30px;
+  left: -34px;
   top: 0;
 
   width: 25px;
@@ -1165,10 +1177,21 @@ input:invalid {
   background-image: url("../img/bag.svg"); */
 }
 
+.filter-item-grid {
+  padding: 0;
+}
+
+.filter-item-grid ul {
+  padding: 0;
+  margin: 0;
+}
+
 .filter-item-grid,
 .filter-item-features {
   border: none;
 }
+
+
 
 .filter-item-grid ul,
 .filter-item-features ul {
@@ -1243,6 +1266,7 @@ input:invalid {
 
 .head-of-sorting {
   width: 360px;
+  margin-bottom: 58px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -1254,11 +1278,28 @@ input:invalid {
 .sorting {
   width: 360px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
+.by-price a {
+  padding-right: 25px;
+}
+
+.by-type a {
+  padding-right: 26px;
+}
+
+.by-name a {
+  padding-right: 48px;
+}
+
+.down a {
+  padding-right: 18px;
+}
+
 
 .sorting a {
   color: #000000;
@@ -1290,6 +1331,8 @@ input:invalid {
   position: relative;
   width: 360px;
   margin-right: 40px;
+  margin-bottom: 33px;
+  overflow: hidden;
 }
 
 .catalog-list-item:nth-child(2n) {
@@ -1314,10 +1357,22 @@ input:invalid {
 /*pagination*/
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.pagination-item-current a{
+.pagination-item {
+  margin-right: 11px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item:first-child a {
   line-height: 18px;
   font-weight: 500;
   color: #000000;
@@ -1337,6 +1392,8 @@ input:invalid {
 }
 
 .pagination-item a {
+  display: block;
+  padding: 14px 18px;
   line-height: 18px;
   font-weight: 500;
   color: #000000;

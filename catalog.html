@@ -5,7 +5,7 @@
   <title>Nёrds</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/sytle.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header-catalog container">
@@ -33,10 +33,10 @@
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
-                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                <div class="bar"></div>
               </div>
               <div class="toggle toggle-min"></div>
-              <div class="toggle toglle-max"></div>
+              <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
               <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -94,11 +94,11 @@
       <div class="filter">
         <b class="head-of-sorting">сортировать:</b>
         <ul class="sorting">
-          <li><a href="#">по цене</a></li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по названию</a></li>
-          <li><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
-          <li><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
+          <li class="by-price"><a href="#">по цене</a></li>
+          <li class="by-type"><a href="#">по типу</a></li>
+          <li class="by-name"><a href="#">по названию</a></li>
+          <li class="down"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
+          <li class="up"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
         </ul>
       </div>
       <ul class="catalog-list">
@@ -158,7 +158,7 @@
         </li>
       </ul>
       <ul class="pagination-list">
-        <li class="pagination-item-current"><a href="#">1</a></li>
+        <li class="pagination-item"><a href="#">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-button"><a href="#">следующая</a></li>
