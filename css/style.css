@@ -43,7 +43,7 @@ a {
 }
 
 .main-header {
-  padding-top: 47px;
+  padding-top: 49px;
   margin-bottom: 80px;
   background-color: #eeeeee;
 }
@@ -72,7 +72,7 @@ a {
 
 .site-navigation a {
   display: block;
-  padding: 7px 23px;
+  padding: 9px 23px;
 }
 
 .user-navigation {
@@ -87,7 +87,7 @@ a {
 
 .user-navigation a {
   display: block;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
 }
 }
 
@@ -227,7 +227,7 @@ a {
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -243,7 +243,7 @@ a {
 .slider-item-button {
   display: block;
   width: 240px;
-  padding: 18px 0;
+  padding: 16px 0;
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
@@ -416,7 +416,9 @@ a {
 }
 
 .whatwedo-item {
-  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
 .whatwedo-item::before {
@@ -496,21 +498,20 @@ a {
 }
 
 .partners-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
   align-items: center;
 }
 
-.partners-list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
 .partners-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 260px;
-  text-align: center;
   position: relative;
 }
 
@@ -521,7 +522,7 @@ a {
   top: 50%;
   width: 2px;
   height: 52px;
-  background: greenyellow;
+  background: #eeeeee;
   transform: translateY(-50%);
 }
 
@@ -529,15 +530,19 @@ a {
   display: none;
 }
 
-.partners-item a {
+.partners-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0.2;
 }
 
-.partners-item a:hover {
+.partners-link:hover,
+.partners-link:focus {
   opacity: 1;
 }
 
-.partners-item a:active {
+.partners-link:active {
   opacity: 0.1;
 }
 
@@ -556,32 +561,24 @@ a {
 }
 
 .contacts {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  box-sizing: border-box;
+  padding: 47px 50px;
   width: 319px;
-  height: 309px;
   background-color: #ffffff;
 }
 
 .contacts-title {
-  display: flex;
   width: 219px;
-  margin-top: 50px;
   margin-bottom: 6px;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .contacts-address {
-  display: flex;
   width: 219px;
-  padding-left: 50px;
   margin-bottom: 13px;
   font-size: 16px;
   line-height: 18px;
@@ -595,12 +592,10 @@ a {
 
 .contacts-number a {
   width: 219px;
-  margin-left: 50px;
   color: #666666;
 }
 
 .contacts-button {
-  margin-left: 50px;
   display: block;
   width: 219px;
   padding: 18px 0px;
