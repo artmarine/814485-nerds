@@ -6,19 +6,20 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
-  <header class="header-catalog container">
-    <nav class="main-navigation">
+  <header class="header-catalog">
+    <nav class="main-navigation container">
       <a class="main-header-logo" href="#"><img src="img/logo.svg" width="160" height="65" alt="Nёrds"></a>
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li class="#"><a href="#">Магазин</a></li>
+        <li class="active"><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a class="bag" href="#">Корзина</a></li>
+        <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
     <h1 class="catalog-caption">Магазин готовых шаблонов</h1>
@@ -92,14 +93,18 @@
     <section class="catalog">
       <h2 class="visually-hidden">Шаблоны</h2>
       <div class="filter">
-        <b class="head-of-sorting">сортировать:</b>
-        <ul class="sorting">
-          <li class="by-price"><a href="#">по цене</a></li>
-          <li class="by-type"><a href="#">по типу</a></li>
-          <li class="by-name"><a href="#">по названию</a></li>
-          <li class="down"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
-          <li class="up"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
-        </ul>
+        <b>сортировать:</b>
+        <div class="union-sort">
+          <ul class="sorting">
+            <li class="by-price"><a href="#">по цене</a></li>
+            <li class="by-type"><a href="#">по типу</a></li>
+            <li class="by-name"><a href="#">по названию</a></li>
+          </ul>
+          <ul class="sorting-up-down">
+            <li class="down"><a href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
+            <li class="up"><a href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
+          </ul>
+        </div>
       </div>
       <ul class="catalog-list">
         <li class="catalog-list-item">
@@ -166,31 +171,31 @@
     </section>
   </main>
   <footer class="main-footer">
-      <section class="map container">
+    <div class="map-wrapper" id="Map">
+      <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="container">
+        <div class="contacts-wrapper">
           <div class="contacts">
             <b class="contacts-title">nёrds design studio</b>
-            <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts-number"><a href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-            <a class="contacts-button" href="#">Напишите нам</a>
+            <a class="contacts-write-btn" href="#">Напишите нам</a>
           </div>
         </div>
       </section>
-      <div class="social-discount container">
-        <div class="footer-discount">
-          <b class="features-discount">Давайте дружить, это выгодно!</b>
-          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        <div class="footer-social">
-          <ul class="social-list">
-            <li><a class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
-            <li><a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-            <li><a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
-          </ul>
-        </div>
-      </div>
+    </div>
+    <div class="social-discount container">
+      <ul class="social-list">
+        <li><a class="social-button"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
+        <li><a class="social-button"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+        <li><a class="social-button"><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
+      </ul>
+    <div class="footer-discount">
+      <b class="features-discount">Давайте дружить, это выгодно!</b>
+      <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </div>
     </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
